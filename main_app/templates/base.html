@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body>
-  <header class="navbar-fixed">
+  <header class="navbar-fixed" style="background-color: #1E8449;" >
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper" style="background-color: #00695C;">
         <ul>
           <li><a href="{% url 'home' %}" class="left brand-logo">&nbsp;&nbsp;Finch Collector</a></li>
         </ul>
@@ -28,7 +28,7 @@
     {% block content %}
     {% endblock %}
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" style="background-color: #00695C;">
     <div class="right">All Rights Reserved, &copy; 2021 Finch Collector &nbsp;</div>
   </footer>
 </body>

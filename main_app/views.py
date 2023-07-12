@@ -30,7 +30,8 @@ class FinchCreate(CreateView):
 class FinchUpdate(UpdateView):
   model = Finch
   fields = ['habitat', 'description', 'diet']
-
+  success_url = '/finches/'
+  
 class FinchDelete(DeleteView):
   model = Finch
   success_url = '/finches'
